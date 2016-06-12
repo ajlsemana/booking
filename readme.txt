@@ -8,7 +8,7 @@
  */     
 
 
-Documentations:
+Documentation:
 
 
 Tutorial: http://paramquery.com/pro/tutorial
