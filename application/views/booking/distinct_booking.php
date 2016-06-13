@@ -46,7 +46,8 @@
                   <tr>
                      <td><label>Currency</label></td>
                      <td>
-                        <select id="sel-currency" disabled required>
+                        <u><?php echo $data->currency; ?></u>
+                        <select id="sel-currency" disabled required style="display: none;">
                         <?php
                            $html = '';
                            foreach($currencies as $row) {
