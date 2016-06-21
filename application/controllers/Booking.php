@@ -120,7 +120,7 @@ class Booking extends CI_Controller {
 				
 				$discount = $addList[$i]["discount"] / 100;
 				$qty = $addList[$i]['qty'];			
-				$t = (float)$price * (int)$qty;
+				$t = (float)$price * (float)$qty;
 				$d = $t * $discount;
 				$total = $t - $d;
 				
@@ -137,7 +137,7 @@ class Booking extends CI_Controller {
 					
 					$discount = $addList[$i]["discount"] / 100;
 					$qty = $addList[$i]['qty'];			
-					$t = (float)$price * (int)$qty;
+					$t = (float)$price * (float)$qty;
 					$d = $t * $discount;
 					$total = $t - $d;
 					
@@ -151,7 +151,7 @@ class Booking extends CI_Controller {
 					
 					$discount = $addList[$i]["discount"] / 100;
 					$qty = $addList[$i]['qty'];			
-					$t = (float)$price * (int)$qty;
+					$t = (float)$price * (float) $qty;
 					$d = $t * $discount;
 					$total = $t - $d;
 					

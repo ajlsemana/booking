@@ -204,7 +204,7 @@
                         listener: {
                             "click": function(evt, ui) {
                                 //append empty row at the end.                            
-                                var rowData = { product_category: '' };                       
+                                var rowData = { product_category: '', discount: 0 };                       
                                 var rowIndx = grid.addRow( { rowData: rowData, checkEditable: true });
                                 
                                 grid.goToPage({
@@ -405,12 +405,12 @@
               return r;
             }
             },                        
-                        { title: "Qty", dataType: "integer", align: "right", dataIndx: "qty", editable: true, width: 30,
+                        { title: "Qty", dataType: "float", align: "right", dataIndx: "qty", editable: true, width: 120,
             validations: [
-            { type: 'gte', value: 1, msg: "must be >= 1" }
+            { type: 'gte', value: 0.1, msg: "must be >= 0.1" }
                             ]
             },
-                        { title: "Discount (%)", dataType: "integer", align: "right", dataIndx: "discount", editable: true, width: 170,
+                        { title: "Discount (%)", dataType: "integer", align: "right", dataIndx: "discount", editable: true, width: 150,
             validations: [
             { type: 'gte', value: 0, msg: "must be >= 0" }
                             ]
@@ -471,13 +471,12 @@
                     .prependTo($(".pq-grid-bottom", this.widget()));
                 calculateSummary();
             }
-            //refresh summary whenever data changes due to edit, add, paste, undo, redo etc.
-            /*
+            //refresh summary whenever data changes due to edit, add, paste, undo, redo etc.            
             obj.change = function (evt, ui) {            
                 obj.refresh.call(this); 
                 calculateSummary();               
             }
-            */
+            
             obj.refresh = function (evt, ui) {
                 calculateSummary();
                 var data = [totalData]; //2 dimensional array

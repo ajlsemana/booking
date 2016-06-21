@@ -1,7 +1,7 @@
 <!-- Main content -->
 <section class="content">
 	<div class="row">    
-		<div class="col-md-6">
+		<div class="col-md-8">
 			<div class="box">
         <?php echo form_open('product/delete', array('id' => 'form-delete')); ?>
                 <div class="box-header">
@@ -17,7 +17,7 @@
                       </th>    
                       <th>Name</th> 
                       <th>Category</th>                            
-                      <th>Price</th> 
+                      <th>Price ($)</th> 
                       <th>Action</th>
                     </tr>
                     <?php
@@ -33,7 +33,7 @@
                             $html .= $row->category;
                           $html .= '</td>';
                           $html .= '<td>';                            
-                            $html .=  '<b>$'.number_format(round((float)$row->price)).'</b>';
+                            $html .=  number_format(round((float)$row->price));
                           $html .= '</td>';
                           $html .= '<td>';
                             $html .= '<a href="'.site_url('product/update_form?id='.$row->id).'" title="update"><i class="fa fa-pencil"></i></a>';                            
@@ -55,8 +55,8 @@
               </div>
             </form>
 		</div>
-    <div class="col-md-3"></div>
-    <div class="col-md-3"></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-2"></div>
 	</div>
 </section>
 <!-- /.content -->

@@ -371,8 +371,8 @@
                     </li>
                   </ul>
                 </li>                                                   
-          </ul>
-		<li><a href="<?php echo site_url('login/logout'); ?>"><i class="fa fa-lock"></i> <span>Logout</span></a><li>
+          </ul>        
+		    <li><a href="<?php echo site_url('login/logout'); ?>"><i class="fa fa-lock"></i> <span>Logout</span></a><li>
         </section>
         <!-- /.sidebar -->
       </aside>
