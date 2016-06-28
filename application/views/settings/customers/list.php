@@ -29,9 +29,9 @@
                           $html .= '<td><input type="checkbox" value="'.$row->id.'" class="checkbox" name="selected[]"></td>';
                            $html .= '<td>';
                            if($row->uploaded_file == '') {
-                              $html .= '<img width="80" height="80" src="'.base_url().'images/customers/no-photo.jpg" alt="customer">';
+                              $html .= '<img width="80" class="img-responsive" src="'.base_url().'images/customers/no-photo.jpg" alt="customer">';
                             } else {
-                              $html .= '<img width="80" height="80" src="'.base_url().'uploads/customers/'.$row->uploaded_file.'" alt="customer">';
+                              $html .= '<img width="80" class="img-responsive" src="'.base_url().'uploads/customers/'.$row->uploaded_file.'" alt="customer">';
                             }
                           $html .= '</td>';
                           $html .= '<td>';

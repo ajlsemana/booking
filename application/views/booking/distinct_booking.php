@@ -6,16 +6,17 @@
          <div class="box">
             <?php echo form_open_multipart('booking/update', array('id' => 'updateForm')); ?>
             <div class="box-header">
-               <u>
-                  <h4><?php echo $data->booking_name; ?></h4>
-               </u>
+			   <u>
+				  <h4><?php echo $data->booking_name; ?></h4>
+			   </u>			   
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-               <table style="width: 65%;" class="tables">
+			   <div class="col-md-10">
+               <table style="width: 75%;" class="tables">
                   <tr>
                      <td><label>Project Name</label></td>
-                     <td><input type="text" value="<?php echo $data->project_name; ?>" name="project_name" class="form-controls" size="50" required></td>
+                     <td><input type="text" value="<?php echo $data->project_name; ?>" name="project_name" class="form-controls" size="60" required></td>
                   </tr>
                   <tr>
                      <td><label>Customer Name</label></td>
@@ -23,14 +24,20 @@
                         <select name="company" required>
                         <?php
                            $html = '';
+						   $logo = base_url().'images/customers/no-photo.jpg';
                            foreach($customers as $customer) {
                             $selected = ($customer->company == $data->customer_id ? 'selected' : '');
+                            if($customer->company == $data->customer_id) {
+								if($customer->uploaded_file != '') {
+									$logo = base_url().'uploads/customers/'.$customer->uploaded_file;
+								}
+							}
                             $html .= '<option value="'.$customer->company.'" '.$selected.'>'.$customer->company.'</option>';
                            }
                            echo $html;
                            ?>
                         </select>
-                     </td>
+                     </td>					 
                   </tr>
                   <tr>
                      <td><label>PO Date</label></td>
@@ -41,7 +48,7 @@
                   </tr>
                   <tr>
                      <td><label>Customer PO No.</label></td>
-                     <td><input type="text" value="<?php echo $data->cust_po_num; ?>" class="form-controls" size="30" name="cust_po_num" required></td>
+                     <td><input type="text" size="60" value="<?php echo $data->cust_po_num; ?>" class="form-controls" size="30" name="cust_po_num" required></td>
                   </tr>
                   <tr>
                      <td><label>Currency</label></td>
@@ -88,7 +95,11 @@
                         <a href="<?php echo site_url('booking/?year='.$_GET['year']); ?>" style="margin-top: 9px;" class="btn">Back</a>
                      </td>
                   </tr>
-               </table>
+               </table>		
+				</div>
+				<div class="col-md-2" id="logo-wrapper">
+					<img class="img-responsive" width="120" src="<?php echo $logo; ?>" alt="customer logo" title="<?php echo $data->customer_id; ?>">
+				</div>
             </div>
             <!-- /.box-body -->               
          </div>
@@ -96,7 +107,7 @@
    </div>
    <div class="row">
       <div class="col-md-12">
-         <script>        
+         <script>        			
             $(function() {
                 var totalData;                
                 var t_bill = 0;                 
@@ -200,7 +211,7 @@
                     items: [{
                         type: 'button',
                         icon: 'ui-icon-plus',
-                        label: 'New Order',
+                        label: 'New Item',
                         listener: {
                             "click": function(evt, ui) {
                                 //append empty row at the end.                            

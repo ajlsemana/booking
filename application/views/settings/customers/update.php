@@ -12,9 +12,9 @@
                <?php echo form_open_multipart('customers/update'); ?>
                <?php
                   if($data->uploaded_file == '') {
-                     echo '<img width="120" height="120" src="'.base_url().'images/customers/no-photo.jpg" alt="customer">';
+                     echo '<img class="img-responsive" width="120" src="'.base_url().'images/customers/no-photo.jpg" alt="customer">';
                    } else {
-                     echo  '<img width="120" height="120" src="'.base_url().'uploads/customers/'.$data->uploaded_file.'" alt="customer">';
+                     echo  '<img class="img-responsive" width="120" src="'.base_url().'uploads/customers/'.$data->uploaded_file.'" alt="customer">';
                    }
                ?>
                   <div class="form-group">

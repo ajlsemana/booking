@@ -65,18 +65,7 @@
                   var obj = {
                   height: 'flex',
                   width: '99%',
-                  //width: 'flex',
-                  toolbar: {
-                  items: [{
-                    type: 'button',
-                    label: "Toggle grouping",
-                    listener: function (evt) {
-                        this.groupOption({
-                            on: !grid.option('groupModel.on')
-                        });
-                    }
-                  }]
-                  },
+                  //width: 'flex',                  
                   dataModel: dataModel,
                   scrollModel: { autoFit: true },
                   colModel: colM,
