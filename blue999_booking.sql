@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 22, 2016 at 04:13 AM
+-- Generation Time: Jul 04, 2016 at 03:39 AM
 -- Server version: 5.5.48-37.8
 -- PHP Version: 5.4.31
 
@@ -341,43 +341,43 @@ CREATE TABLE IF NOT EXISTS `customers` (
 
 INSERT INTO `customers` (`id`, `company`, `address`, `contact_person`, `uploaded_file`, `created_at`, `updated_at`) VALUES
 (1, 'Abu Dhabi Islamic Bank (ADIB)', 'PO Box 313, Abu Dhabi, UAE', 'Majdi Al Hassan', 'ADIB_logo.JPG', '2016-03-29 06:19:26', '2016-03-29 20:32:13'),
-(2, 'ADIB - IRAQ', '', 'Majdi Al Hassan', '', '2016-03-29 06:22:56', '0000-00-00 00:00:00'),
+(2, 'ADIB - IRAQ', 'Information Technology Division Opposite Nissan Showroom Abu Dhabi, U.A.E.', 'Majdi Al Hassan', 'ADIB_logo.png', '2016-03-29 06:22:56', '2016-06-23 15:44:17'),
 (3, 'National Bank of Abu Dhabi (NBAD)', 'PO Box 4, Abu Dhabi, UAE', 'Fadi Oweinah', 'nbad.jpg', '2016-03-29 06:26:55', '2016-03-29 20:37:27'),
-(4, 'Neuron LLC', 'IT Plaza Building, 6th Floor, Dubai Silicon Oasis, PO Box 72071, Dubai, UAE', 'Shaheen Khan', '', '2016-03-29 06:35:20', '0000-00-00 00:00:00'),
-(5, 'Canar Telecommunication Company', 'Al Qibalh Centre Building, Africa Road, Al Amarat, 8182 Khartoum, Sudan', 'Emad M. Elbashir', '', '2016-03-29 06:40:24', '0000-00-00 00:00:00'),
-(6, 'American Express KSA', 'PO Box 6624, Riyadh 11452, Kingdom of Saudi Arabia', 'Dany Ibrahim', '', '2016-03-29 06:43:03', '0000-00-00 00:00:00'),
-(7, 'Ahmed Seddiqi & Sons LLC', '13th Floor Capricorn Tower, Sheikh Zayed Road, PO Box 2123, Dubai, UAE', 'Rania Mehwi', '', '2016-03-29 06:47:24', '0000-00-00 00:00:00'),
-(8, 'United Bank Limited', 'NJI Bldg., Mezzanine Floor, I. I Chundrigar Road, Karachi, Pakistan', 'Atiq Ur Rehman', '', '2016-03-29 06:53:09', '0000-00-00 00:00:00'),
+(4, 'Neuron LLC', 'IT Plaza Building, 6th Floor, Dubai Silicon Oasis, PO Box 72071, Dubai, UAE', 'Shaheen Khan', 'NEURON.jpg', '2016-03-29 06:35:20', '2016-06-23 16:41:12'),
+(5, 'Canar Telecommunication Company', 'Al Qibalh Centre Building, Africa Road, Al Amarat, 8182 Khartoum, Sudan', 'Emad M. Elbashir', 'CANAR_11.jpg', '2016-03-29 06:40:24', '2016-06-23 16:27:07'),
+(6, 'American Express KSA', 'PO Box 6624, Riyadh 11452, Kingdom of Saudi Arabia', 'Dany Ibrahim', 'AMEX.jpg', '2016-03-29 06:43:03', '2016-06-23 16:24:53'),
+(7, 'Ahmed Seddiqi & Sons LLC', '13th Floor Capricorn Tower, Sheikh Zayed Road, PO Box 2123, Dubai, UAE', 'Rania Mehwi', 'Ahmed-Seddiqi--Sons-600px-logo.jpg', '2016-03-29 06:47:24', '2016-06-23 15:58:14'),
+(8, 'United Bank Limited', 'NJI Bldg., Mezzanine Floor, I. I Chundrigar Road, Karachi, Pakistan', 'Atiq Ur Rehman', 'UBL_Logo1.jpg', '2016-03-29 06:53:09', '2016-06-23 16:48:05'),
 (9, 'Al Majal G4S', 'Al Amoudi Plaza, PO Box 6930, Jeddah 21452, Kingdom of Saudi Arabia', 'Taher Sufian Abu-Sheikha', 'g4s_logo_rgb_jpeg_large_250x159.jpg', '2016-03-29 07:42:08', '2016-03-29 20:35:50'),
-(10, 'Afro Asian Assistance B.S.C.', 'PO Box 20078, Manama, Kingdom of Bahrain', 'Zain Makki', '', '2016-03-29 08:06:13', '0000-00-00 00:00:00'),
-(11, 'Al Jomaih Automotive Company', 'PO Box 224, Dammam 31411, Kingdom of Saudi Arabia', 'Mohamed Khaled', '', '2016-03-29 09:03:09', '0000-00-00 00:00:00'),
-(12, 'Al Jomaih Bottling Plants', 'PO Box 210, Riyadh, Kingdom of Saudi Arabia', 'Nassib Sayegh', '', '2016-03-29 11:09:35', '0000-00-00 00:00:00'),
-(13, 'Ahli Bank of Oman ', 'PO Box 545, Mina Al Fahal 116, Oman', 'Tariq Al Zadjali', '', '2016-03-29 11:14:29', '0000-00-00 00:00:00'),
-(14, 'Ahli Bank of Qatar', 'PO Box 2309, Suhim Bin Hamdan St., Doha, Qatar', 'Roshan Kareem', '', '2016-03-29 12:10:36', '0000-00-00 00:00:00'),
-(15, 'Rewards Management ME (Airmiles)', 'PO Box 33818, Dubai, UAE', 'Helen Fee', '', '2016-03-29 12:21:05', '0000-00-00 00:00:00'),
-(16, 'Al Hamra Real Estate', 'PO Box 30019, Ras Al Khaimah, UAE', 'Mathew Alex', '', '2016-03-29 12:31:09', '0000-00-00 00:00:00'),
-(17, 'Commercial Bank Qatar Q.S.C.', 'PO Box 3232, Doha, Qatar', 'Sunil Clement Lobo', '', '2016-03-29 12:38:38', '0000-00-00 00:00:00'),
-(18, 'CRM Middle East', 'PO Box 15316, Dubai, UAE', 'Lina Zarifeh', '', '2016-03-30 11:33:36', '0000-00-00 00:00:00'),
-(19, 'United Electronics Company (Extra)', 'King Faisal Road, PO Box 76688, Al Khobar 31952, Kingdom of Saudi Arabia', 'Zahoor Ahmed', '', '2016-04-13 05:17:55', '0000-00-00 00:00:00'),
-(20, 'Gap Corp', 'PO Box 127284, Dubai, UAE', 'Menaka Gopala', '', '2016-04-13 05:27:01', '0000-00-00 00:00:00'),
-(21, 'MEZZO SASU', '2 Bis Rue du Creusot - Batiment D, 59170 Croix, France, Siret 48760068600074', 'Frederic Baudine', '', '2016-04-13 05:45:22', '0000-00-00 00:00:00'),
-(22, 'Procco Financial Services WLL', 'Office 401/403, Al Moayyed Tower, Seef District, Manama, Bahrain', 'Benard Wiese', '', '2016-04-13 05:52:13', '0000-00-00 00:00:00'),
-(23, 'Sharjah National Travel & Tourist Agency (SNTTA)', 'PO Box 17, Sharjah, UAE', 'Matthew Adams', '', '2016-04-13 06:00:58', '0000-00-00 00:00:00'),
-(24, 'TRANSMED Limited (KSA)', 'Mazaya Tower, 4th Floor, Al Ma''ather Street, PO Box 2700, Riyadh 11461, Kingdom of Saudi Arabia', 'Mohamad Saleh', '', '2016-04-13 06:12:18', '2016-04-13 15:15:41'),
-(25, 'TRANSMED Lebanon', 'PO Box 11-913, Beirut 2060, Lebanon', 'Daoud Al Gharib', '', '2016-04-13 06:17:32', '0000-00-00 00:00:00'),
-(26, 'UBL International (UAE)', 'PO Box 35170, Al Garhoud, Dubai, UAE', 'Bharat Mathur', '', '2016-04-13 06:26:31', '0000-00-00 00:00:00'),
-(27, 'Ahli United Bank', 'PO Box 2424, Manama, Bahrain', 'Sujatha Shivappala', '', '2016-04-13 07:01:27', '0000-00-00 00:00:00'),
-(28, 'Advancia Teleservices', 'Mat. Fiscal 1160010/Z/A/M/000, Zone d''Activite Khereddine, Lot 2.216, 2015 Le Tunis, Tunisie', 'Chedlia Ben Youssef', '', '2016-04-13 07:12:13', '0000-00-00 00:00:00'),
-(29, 'National Bank of Oman', 'PO Box 751, Ruwi 112, Sultanate of Oman', 'Aji Bhaskar', '', '2016-04-13 07:27:33', '0000-00-00 00:00:00'),
-(30, 'Banque Saudi Fransi (BSF)', 'PO Box 56006, Riyadh 11554, Kingdom of Saudi Arabia', 'Essam Mohammed', '', '2016-04-13 07:40:46', '0000-00-00 00:00:00'),
-(31, 'Altitude Software MENA FZ LLC', 'Dubai Internet City, Building 1, Office 215-216, PO Box 500071, Dubai, UAE', 'Abegaile Perez', '', '2016-04-13 07:42:59', '0000-00-00 00:00:00'),
-(32, 'ITACO Bahrain Co. WLL', 'PO Box 10871, Manama, Bahrain', 'Joy Thariath', '', '2016-04-13 10:39:05', '0000-00-00 00:00:00'),
-(33, 'Future Technology', 'PO Box 25, Dubai, UAE', 'Mazen Mustafa Al Najjar', '', '2016-04-13 12:19:15', '0000-00-00 00:00:00'),
-(34, 'e-Solutions House', '7295 Pr Abdulaziz Bin Musaed Bin Jalawi St., Sulimaniah Dist., PO Box 305175, Riyadh 11361, Kingdom ', 'Ayman Howera', '', '2016-04-13 12:39:40', '0000-00-00 00:00:00'),
-(35, 'Credit du Maroc', 'Casablanca, Morocco', 'Youssef Touil', '', '2016-04-14 05:03:45', '0000-00-00 00:00:00'),
-(36, 'Detecon International GmbH', 'Sternengasse 14-16, 50676 Cologne, Federal Republic of Germany', 'Issa Nasser', '', '2016-04-14 05:11:46', '0000-00-00 00:00:00'),
-(37, 'Detecon Consulting FZ LLC', 'Dubai Internet City, Building 1, Office 305, PO Box 500089, Dubai, UAE', 'Issa Nasser', '', '2016-04-14 05:17:35', '0000-00-00 00:00:00'),
-(38, 'MEZZO', '12 Rue 8608 - ZI Charguia 1 2035 Tunis, Tunisia', 'Lobna Lachaal', '', '2016-06-21 06:51:34', '0000-00-00 00:00:00');
+(10, 'Afro Asian Assistance B.S.C.', 'PO Box 20078, Manama, Kingdom of Bahrain', 'Zain Makki', 'AAA.jpg', '2016-03-29 08:06:13', '2016-06-23 15:47:55'),
+(11, 'Al Jomaih Automotive Company', 'PO Box 224, Dammam 31411, Kingdom of Saudi Arabia', 'Mohamed Khaled', 'aljomaih.jpg', '2016-03-29 09:03:09', '2016-06-23 16:00:42'),
+(12, 'Al Jomaih Bottling Plants', 'PO Box 210, Riyadh, Kingdom of Saudi Arabia', 'Nassib Sayegh', 'aLjOMAIHbOTTLINGpLANTS.png', '2016-03-29 11:09:35', '2016-06-23 16:02:40'),
+(13, 'Ahli Bank of Oman ', 'PO Box 545, Mina Al Fahal 116, Oman', 'Tariq Al Zadjali', 'ABO.png', '2016-03-29 11:14:29', '2016-06-23 15:55:40'),
+(14, 'Ahli Bank of Qatar', 'PO Box 2309, Suhim Bin Hamdan St., Doha, Qatar', 'Roshan Kareem', 'ABQ.jpg', '2016-03-29 12:10:36', '2016-06-23 15:56:47'),
+(15, 'Rewards Management ME (Airmiles)', 'PO Box 33818, Dubai, UAE', 'Helen Fee', '6938975153_69002ceed0_b.jpg', '2016-03-29 12:21:05', '2016-06-23 16:42:41'),
+(16, 'Al Hamra Real Estate', 'PO Box 30019, Ras Al Khaimah, UAE', 'Mathew Alex', 'AlHamraVillage.jpg', '2016-03-29 12:31:09', '2016-06-23 15:58:40'),
+(17, 'Commercial Bank Qatar Q.S.C.', 'PO Box 3232, Doha, Qatar', 'Sunil Clement Lobo', 'CBQ_LOGO.jpg', '2016-03-29 12:38:38', '2016-06-23 16:27:32'),
+(18, 'CRM Middle East', 'PO Box 15316, Dubai, UAE', 'Lina Zarifeh', 'CRM-ME.png', '2016-03-30 11:33:36', '2016-06-23 16:28:51'),
+(19, 'United Electronics Company (Extra)', 'King Faisal Road, PO Box 76688, Al Khobar 31952, Kingdom of Saudi Arabia', 'Zahoor Ahmed', 'EXTRA.JPG', '2016-04-13 05:17:55', '2016-06-23 16:53:17'),
+(20, 'Gap Corp', 'PO Box 127284, Dubai, UAE', 'Menaka Gopala', 'gapcorpNBG110X20.png', '2016-04-13 05:27:01', '2016-06-23 16:31:59'),
+(21, 'MEZZO SASU', '2 Bis Rue du Creusot - Batiment D, 59170 Croix, France, Siret 48760068600074', 'Frederic Baudine', 'Mezzo_sasu.JPG', '2016-04-13 05:45:22', '2016-06-23 16:40:28'),
+(22, 'Procco Financial Services WLL', 'Office 401/403, Al Moayyed Tower, Seef District, Manama, Bahrain', 'Benard Wiese', 'procco.png', '2016-04-13 05:52:13', '2016-06-23 16:42:09'),
+(23, 'Sharjah National Travel & Tourist Agency (SNTTA)', 'PO Box 17, Sharjah, UAE', 'Matthew Adams', 'SNTTA.png', '2016-04-13 06:00:58', '2016-06-23 16:44:03'),
+(24, 'TRANSMED Limited (KSA)', 'Mazaya Tower, 4th Floor, Al Ma''ather Street, PO Box 2700, Riyadh 11461, Kingdom of Saudi Arabia', 'Mohamad Saleh', 'Transmed1.JPG', '2016-04-13 06:12:18', '2016-06-23 16:47:19'),
+(25, 'TRANSMED Lebanon', 'PO Box 11-913, Beirut 2060, Lebanon', 'Daoud Al Gharib', 'Transmed.JPG', '2016-04-13 06:17:32', '2016-06-23 16:46:59'),
+(26, 'UBL International (UAE)', 'PO Box 35170, Al Garhoud, Dubai, UAE', 'Bharat Mathur', 'UBL_Logo.jpg', '2016-04-13 06:26:31', '2016-06-23 16:47:39'),
+(27, 'Ahli United Bank', 'PO Box 2424, Manama, Bahrain', 'Sujatha Shivappala', 'AUB_logo.jpg', '2016-04-13 07:01:27', '2016-06-23 15:57:51'),
+(28, 'Advancia Teleservices', 'Mat. Fiscal 1160010/Z/A/M/000, Zone d''Activite Khereddine, Lot 2.216, 2015 Le Tunis, Tunisie', 'Chedlia Ben Youssef', 'ADVAncia.JPG', '2016-04-13 07:12:13', '2016-06-23 15:46:19'),
+(29, 'National Bank of Oman', 'PO Box 751, Ruwi 112, Sultanate of Oman', 'Aji Bhaskar', 'NBO-Logo-V22-300x259.jpg', '2016-04-13 07:27:33', '2016-06-23 16:40:57'),
+(30, 'Banque Saudi Fransi (BSF)', 'PO Box 56006, Riyadh 11554, Kingdom of Saudi Arabia', 'Essam Mohammed', 'BSF_logo.jpg', '2016-04-13 07:40:46', '2016-06-23 16:25:29'),
+(31, 'Altitude Software MENA FZ LLC', 'Dubai Internet City, Building 1, Office 215-216, PO Box 500071, Dubai, UAE', 'Abegaile Perez', 'altitude_logo_monochrome_h_large_(002).jpg', '2016-04-13 07:42:59', '2016-06-23 16:05:02'),
+(32, 'ITACO Bahrain Co. WLL', 'PO Box 10871, Manama, Bahrain', 'Joy Thariath', 'ITACO.JPG', '2016-04-13 10:39:05', '2016-06-23 16:35:30'),
+(33, 'Future Technology', 'PO Box 25, Dubai, UAE', 'Mazen Mustafa Al Najjar', 'Al_Yousuf-Computers_Tele-Logo-Ot_(2).jpg', '2016-04-13 12:19:15', '2016-06-23 16:31:20'),
+(34, 'e-Solutions House', '7295 Pr Abdulaziz Bin Musaed Bin Jalawi St., Sulimaniah Dist., PO Box 305175, Riyadh 11361, Kingdom ', 'Ayman Howera', 'ESH_logo.jpg', '2016-04-13 12:39:40', '2016-06-23 16:30:56'),
+(35, 'Credit du Maroc', 'Casablanca, Morocco', 'Youssef Touil', 'credit_du_maroc.jpg', '2016-04-14 05:03:45', '2016-06-23 16:28:34'),
+(36, 'Detecon International GmbH', 'Sternengasse 14-16, 50676 Cologne, Federal Republic of Germany', 'Issa Nasser', 'Detecon-Logo-01.png', '2016-04-14 05:11:46', '2016-06-23 16:30:39'),
+(37, 'Detecon Consulting FZ LLC', 'Dubai Internet City, Building 1, Office 305, PO Box 500089, Dubai, UAE', 'Issa Nasser', 'detecon.jpg', '2016-04-14 05:17:35', '2016-06-23 16:29:38'),
+(38, 'MEZZO', '12 Rue 8608 - ZI Charguia 1 2035 Tunis, Tunisia', 'Lobna Lachaal', 'Mezzo.JPG', '2016-06-21 06:51:34', '2016-06-23 16:38:41');
 
 -- --------------------------------------------------------
 
